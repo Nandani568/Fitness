@@ -1,0 +1,259 @@
+/* css reset  */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Chelsea Market', cursive;
+}
+
+/* css variables */
+:root{
+    --navbar-height:59px;
+    
+    
+}
+/* navigation Bar  */
+#navbar{
+    display: flex;
+    font-size: small;
+    align-items: center;
+    /* justify-content: center; */
+}
+/* logo and images */
+#logo{
+    margin: 0px 2px;
+    padding-left: 0px;
+    position: sticky;
+    top: 3px;
+    
+}
+#logo img{
+    margin: 1px 4px;
+    border-radius: 55%;
+    /* position: sticky; */
+    /* top: 3px; */
+    /* height: 56px; */
+    
+}
+#navbar::before{
+    content: "";
+    background-color: gray;
+    position: absolute;
+    height: 0px;
+    width:100% ;
+    z-index: -1;
+    opacity: 0.9;
+    top: 0px;
+    left: 0px;
+    
+    
+    
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    background-color:brown;
+    position: sticky;
+    /* background-color:brown; */
+    /* height: 45px; */
+    top: 0px;
+    opacity: 0.8;
+    z-index:9;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar li{
+    /* display: flex; */
+    list-style: none;
+    font-size: 1.3rem;
+    position: sticky;
+    height: 18px;
+    
+}
+#navbar li a{
+    color:white;
+    padding: 3px 33px;
+    display: block;
+    border-radius: 20%;
+    text-decoration: none;
+    position: sticky;
+}
+#navbar li a:hover{
+    color:black;
+    background-color: teal;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 559px;
+    
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background:url("Food4.jpg" ) center no-repeat;
+    
+    /* background:url("") center no-repeat; */
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    opacity: 9.2;
+    top: 0px;
+    left: 0px;
+}
+#home p{
+    color:white;
+    text-align: center;
+    
+    /* font-size: x-large; */
+    /* margin-top: 450px; */
+}
+#home h1{
+    color:white;
+    text-align: center;
+    display: block;
+    /* margin-top: 33px; */
+}
+#services{
+    margin: 10px;
+    display: flex;
+    /* background-color: peru;
+    padding: 0px; */
+}
+#services .box{
+    border :2px solid brown;
+    /* padding: 34px;  */
+    border-radius: 28px;
+    margin: 6px 8px;
+    background-color: tan;
+    margin-top: 0px;
+    
+    /* height: 156px; */
+    display: block;
+    /* margin: auto; */
+}
+html{
+    scroll-behavior: smooth;
+}
+#services .box img{
+    height: 330px;
+    margin:auto;
+    display: block;
+}
+#services .box p{
+    padding: 2px;
+    font-family: 'Chelsea Market', cursive;
+
+}
+#client-section{
+   height: 344px;
+   color:black;
+   font-size: xx-large;
+   /* position: relative; */
+}
+#client-section::before{
+   content: "";
+   position: absolute;
+   background: url('pool.jpg') center no-repeat;
+   /* background: url('Food9.jpg') center no-repeat; */
+   width: 100%;
+   height:70%;
+   z-index: -1;
+   opacity: 2.2;
+   /* font-size: x-large; */
+}
+#clients{
+    /* font-size: 500px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 144px;
+}
+#clients img{
+    
+    height:130px ;
+}
+.client-item{
+    padding: 34px;
+}
+/* Home section */
+.h-primary{
+    /* font-size:50px; */
+    height: 35px;
+    padding: 12px;
+    
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+}
+#contact{
+    position: relative;
+    font-size: x-large;
+    
+    height: 562px;
+    margin-top: 40px;
+ 
+    
+} 
+#contact-box{
+    display: bold;
+    float: right;
+    /* justify-content: center; */
+    /* align-items: center; */
+
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid teal;
+    border-radius: 5px;
+}
+#contact-box form{
+    width: 80%;
+}
+#contact-box label{
+    font-size:1.4rem;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .7;
+    background: url('Food7.jpg') no-repeat center center/cover;
+    float:right;
+    font-size: 800px;
+    /* margin-top: 400px; */
+
+}
+button.btn{
+    font-size: x-large;
+    padding: 6px 20px;
+    background-color: brown;
+    color: white;
+    border: 2px solid white;
+    margin: 17px;
+    border-radius: 10px;
+}
+ button.btn:hover{
+        color: black;
+        background-color: white;
+        cursor: pointer;
+    }
+.center{
+    text-align: center;
+}
+
+
+    
